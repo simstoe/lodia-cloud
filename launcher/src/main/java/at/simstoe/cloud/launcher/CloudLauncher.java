@@ -25,7 +25,7 @@ public final class CloudLauncher {
     @Getter
     @Accessors(fluent = true)
     private static CloudLauncher instance;
-    private String cloudVersion = "1.0.0-ALPHA";
+    private String cloudVersion = "1.0.1-ALPHA";
 
     private final CommandManager commandManager;
     private final Logger logger;
