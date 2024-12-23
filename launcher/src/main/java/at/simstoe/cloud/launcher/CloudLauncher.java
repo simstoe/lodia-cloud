@@ -12,6 +12,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import java.util.Scanner;
+
 /**
  * @author Simon Stögerer
  * copyright - all rights reserved
@@ -68,6 +70,9 @@ public final class CloudLauncher {
     }
 
     public static void main(String[] args) {
-        new CloudLauncher();
+        System.out.println("Hello World!");
+        var scanner = new Scanner(System.in);
+
+        var i = scanner.nextInt();
     }
 }
