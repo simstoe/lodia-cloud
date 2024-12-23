@@ -14,10 +14,6 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
-java {
-    modularity.inferModulePath = true
-}
-
 tasks.test {
     useJUnitPlatform()
 }

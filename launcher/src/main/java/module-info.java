@@ -1,4 +1,4 @@
 module at.simstoe.cloud.launcher {
     requires static lombok;
-    requires api;
+    requires at.simstoe.cloud.api;
 }

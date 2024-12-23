@@ -9,10 +9,6 @@ repositories {
     mavenCentral()
 }
 
-java {
-    modularity.inferModulePath = true
-}
-
 dependencies {
     implementation(project(":api"))
 
@@ -21,7 +17,7 @@ dependencies {
 }
 
 application {
-    mainModule = "at.simstoe.launcher"
+    mainModule = "at.simstoe.cloud.launcher"
     mainClass = "at.simstoe.cloud.launcher.CloudLauncher"
 }
 
