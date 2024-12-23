@@ -1,5 +1,5 @@
 plugins {
-    id 'application'
+    id 'java'
 }
 
 group = 'at.simstoe'
@@ -14,20 +14,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-
-    implementation project(':api')
-}
-
-application {
-    mainClassName = 'at.simstoe.cloud.launcher.CloudLauncher'
-}
-
-jar {
-    manifest {
-        attributes(
-                'Main-Class': 'at.simstoe.cloud.launcher.CloudLauncher'
-        )
-    }
 }
 
 test {
